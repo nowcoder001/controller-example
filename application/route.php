@@ -19,6 +19,7 @@ return [
     'news/:id' => 'index/news/show', // 3.4.2
 
     '__rest__' => [
-        'users' => 'index/user', // 3.5.1
+        'user' => 'index/user', // 3.5.1
+        'user.post' => 'index/post' // 3.5.2
     ]
 ];

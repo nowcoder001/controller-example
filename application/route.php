@@ -21,5 +21,10 @@ return [
     '__rest__' => [
         'user' => 'index/user', // 3.5.1
         'user.post' => 'index/post' // 3.5.2
-    ]
+    ],
+    '[article]' => [ // 3.6.1
+        'post/:id' => ['index/article/post', 'method' => 'post'],
+        ':id' => ['index/article/show', 'method' => 'get'],
+    ],
+    '__miss__' => 'index/index/notfound' // 3.7
 ];

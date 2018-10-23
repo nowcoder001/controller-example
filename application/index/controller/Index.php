@@ -13,4 +13,14 @@ class Index
     {
         return response("您查看的页面走丢啦!", 404);
     }
+
+    /**
+     * URL生成 3.9
+     *
+     * @return string
+     */
+    public function url()
+    {
+        return url('index', '', 'html');
+    }
 }

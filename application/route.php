@@ -26,5 +26,5 @@ return [
         'post/:id' => ['index/article/post', 'method' => 'post'],
         ':id' => ['index/article/show', 'method' => 'get'],
     ],
-    '__miss__' => 'index/index/notfound' // 3.7
+//    '__miss__' => 'index/index/notfound' // 3.7
 ];

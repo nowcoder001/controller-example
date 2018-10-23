@@ -17,4 +17,8 @@ return [
     'news/static/:id' => 'app\index\controller\News::showStatic', // 3.4.4
     'news/old/:id' => '/news/:id', // 3.4.1
     'news/:id' => 'index/news/show', // 3.4.2
+
+    '__rest__' => [
+        'users' => 'index/user', // 3.5.1
+    ]
 ];

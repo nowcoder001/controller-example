@@ -107,4 +107,14 @@ class Post
     {
         return json(null, 204);
     }
+
+    /**
+     * 4.10 页面缓存
+     *
+     * @param $id
+     */
+    public function show($id)
+    {
+        printf("现在时间:%s,访问ID:%d", date('Y-m-d H:i:s'), $id);
+    }
 }
